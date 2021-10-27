@@ -1,0 +1,12 @@
+package main.java.project.service;
+
+import project.persistence.entities.Recipe;
+import java.util.List;
+
+public interface RecipeService {
+    List<Recipe> findAll();
+    Recipe findOne(long id);
+    List<Recipe> findByName(String name);
+    List<Recipe> findByTags(Tags tags);
+    void sendRecipe(long id, String email);
+}
