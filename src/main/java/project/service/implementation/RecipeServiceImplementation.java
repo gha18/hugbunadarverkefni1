@@ -1,5 +1,8 @@
 package main.java.project.service.implementation;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import main.java.project.service;
+
 @Service
 
 public class RecipeServiceImplementation implements RecipeService {
@@ -27,12 +30,12 @@ public class RecipeServiceImplementation implements RecipeService {
 
     @Override 
     public List<Recipe> findByTags(Tags tags) {
-        return repository.findByTags(tags); //?
+        return repository.findByTags(tags); 
     }
 
     @Override
     public void sendRecipe(long id, String email) {
-        repository.sendRecipe(id, email); //?
+        repository.sendRecipe(id, email); 
     }
 }
 
