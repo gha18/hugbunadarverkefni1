@@ -1,7 +1,15 @@
-package main.java.project.controller;
+package project.controller;
 
-import project.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestMapping;
+import main.java.project.persistence.entities.Recipe;
+import main.java.project.persistence.repositories.RecipeRepository;
+import main.java.project.service.RecipeService;
+
 
 @Controller
 
@@ -23,7 +31,7 @@ public class RecipeController
         return "recipes/Recipes";
     }
 
-    @RequestMapping(value = "/recipe", method = RequestMethod.Post)
+    @RequestMapping(value = "/recipe", method = RequestMethod.POST)
     public String recipeViewGet(Model model)
     {
         model.addAttribute("recipe", new Recipe());
@@ -31,7 +39,7 @@ public class RecipeController
         return "recipes/Recipes";
     }
 
-    @RequestMapping(value = "/recipe", method = RequestMethod.Post)
+    @RequestMapping(value = "/recipe", method = RequestMethod.POST)
     public void sendRecipe(long id, String email)
     {
         //Ekki hugmynd
