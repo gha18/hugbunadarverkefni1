@@ -32,6 +32,14 @@ public class RecipeController
     }
 
     @RequestMapping(value = "/recipe", method = RequestMethod.POST)
+    public String recipeGetInstructionsFromName(@PathVariable String name, Model model)
+    {
+        model.addAttribute("recipes", recipeService.findByName(name));
+        model.addAttribute("recipe",new Recipe());
+        return "recipes/Recipes";
+    }
+
+    @RequestMapping(value = "/recipe", method = RequestMethod.POST)
     public String recipeViewGet(Model model)
     {
         model.addAttribute("recipe", new Recipe());

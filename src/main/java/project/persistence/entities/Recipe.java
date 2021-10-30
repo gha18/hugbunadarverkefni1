@@ -15,6 +15,9 @@ public class Recipe {
 	private String name;
 	private String description;
 	private Tags tags;
+	private int serves;
+	private int price;
+	private int category;
 
 	//Getters & Setters
 	public long getID() {
@@ -34,6 +37,36 @@ public class Recipe {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public void setServes(int serves)
+	{
+		this.serves = serves;
+	}
+
+	public int getServes()
+	{
+		return serves;
+	}
+
+	public void setPrice(int price)
+	{
+		this.price = price;
+	}
+
+	public int getPrice()
+	{
+		return price;
+	}
+
+	public void setcategory(int category)
+	{
+		this.category = category;
+	}
+
+	public int getCategory()
+	{
+		return category;
 	}
 
 	@Embedded

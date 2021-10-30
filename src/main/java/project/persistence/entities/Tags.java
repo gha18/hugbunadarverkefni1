@@ -17,9 +17,7 @@ public class Tags {
     private boolean kosher;
     private boolean keto;
     private boolean sugarfree;
-    private int serves;
-    private int price;
-    private int category;
+
 
     public void setVegan(boolean vegan)
     {
@@ -91,35 +89,7 @@ public class Tags {
         return sugarfree;
     }
 
-    public void setServes(int serves)
-    {
-        this.serves = serves;
-    }
 
-    public int getServes()
-    {
-        return serves;
-    }
-
-    public void setPrice(int price)
-    {
-        this.price = price;
-    }
-
-    public int getPrice()
-    {
-        return price;
-    }
-
-    public void setcategory(int category)
-    {
-        this.category = category;
-    }
-
-    public int getCategory()
-    {
-        return category;
-    }
 
 
 }
