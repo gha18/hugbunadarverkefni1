@@ -1,6 +1,6 @@
 package project.service;
 
-import main.java.project.persistence.entities.Recipe;
+import project.persistence.entities.Recipe;
 import project.persistence.entities.Tags;
 
 import java.util.List;

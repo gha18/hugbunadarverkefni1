@@ -1,5 +1,5 @@
 package project.persistence.repositories;
-import main.java.project.persistence.entities.Recipe;
+import project.persistence.entities.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import project.persistence.entities.Tags;
 
