@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestMapping;
 import main.java.project.persistence.entities.Recipe;
-import main.java.project.persistence.repositories.RecipeRepository;
+import project.persistence.repositories.RecipeRepository;
 import main.java.project.service.RecipeService;
 
 

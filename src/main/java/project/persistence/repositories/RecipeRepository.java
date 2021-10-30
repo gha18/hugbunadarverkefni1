@@ -1,4 +1,9 @@
-package main.java.project.persistence.repositories;
+package project.persistence.repositories;
+import main.java.project.persistence.entities.Recipe;
+import org.springframework.data.jpa.repository.JpaRepository;
+import project.persistence.entities.Tags;
+
+import java.util.List;
 
 public interface RecipeRepository extends JpaRepository<Recipe, Long> {
     List<Recipe> findAll();

@@ -1,4 +1,6 @@
-package main.java.project.persistence.entities;
+package project.persistence.entities;
+
+import project.persistence.entities.Tags;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
@@ -21,13 +23,13 @@ public class Recipe {
 	public void setID(long id) {
 		this.id = id;
 	}
-	public long getName() {
+	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public long getDescription() {
+	public String getDescription() {
 		return description;
 	}
 	public void setDescription(String description) {

@@ -1,6 +1,8 @@
-package main.java.project.service;
+package project.service;
 
-import project.persistence.entities.Recipe;
+import main.java.project.persistence.entities.Recipe;
+import project.persistence.entities.Tags;
+
 import java.util.List;
 
 public interface RecipeService {
