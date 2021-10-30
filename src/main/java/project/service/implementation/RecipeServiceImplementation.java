@@ -36,13 +36,14 @@ public class RecipeServiceImplementation implements RecipeService {
     }
 
     @Override 
-    public List<Recipe> findByTags(Tags tags, int serves, int[] price, int category) {
+    public List<Recipe> findByTags(int tagId, int serves, int priceLow, int priceHigh, int category) {
         return repository.findByTags(tags); 
     }
 
     @Override
     public void sendRecipe(long id, String email) {
-        repository.sendRecipe(id, email); 
+        //Eftir að implementa
+        return;
     }
 }
 

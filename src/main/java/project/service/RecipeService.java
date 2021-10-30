@@ -9,6 +9,6 @@ public interface RecipeService {
     List<Recipe> findAll();
     Recipe findOne(long id);
     List<Recipe> findByName(String name);
-    List<Recipe> findByTags(Tags tags, int serves, int[] price, int category);
+    List<Recipe> findByTags(int tagId, int serves, int priceLow, int priceHigh, int category);
     void sendRecipe(long id, String email);
 }
