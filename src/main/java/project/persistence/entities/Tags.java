@@ -10,6 +10,7 @@ import javax.persistence.Id;
 public class Tags {
 
     @Id
+    private int id;
     private boolean vegan;
     private boolean vegetarian;
     private boolean glutenfree;
@@ -18,6 +19,16 @@ public class Tags {
     private boolean keto;
     private boolean sugarfree;
 
+
+    public void setId(int id)
+    {
+        this.id = id;
+    }
+
+    public int getId()
+    {
+        return id;
+    }
 
     public void setVegan(boolean vegan)
     {

@@ -9,6 +9,6 @@ public interface RecipeRepository extends JpaRepository<Recipe, Long> {
     List<Recipe> findAll();
     Recipe findOne(long id);
     List<Recipe> findByName(String name);
-    List<Recipe> findByTags(Tags tags);
+    List<Recipe> findByTags(Tags tags, int serves, int[] price, int category);
     void sendRecipe(long id, String email);
 }

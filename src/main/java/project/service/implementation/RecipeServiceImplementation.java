@@ -36,7 +36,7 @@ public class RecipeServiceImplementation implements RecipeService {
     }
 
     @Override 
-    public List<Recipe> findByTags(Tags tags) {
+    public List<Recipe> findByTags(Tags tags, int serves, int[] price, int category) {
         return repository.findByTags(tags); 
     }
 
