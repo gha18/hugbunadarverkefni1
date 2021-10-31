@@ -23,12 +23,18 @@ public class RecipeController
         this.recipeService = recipeService;
     }
 
+    @RequestMapping(value = "/") 
+    public String homeController()
+    {
+        return "index";
+    }
+
     @RequestMapping(value = "/recipe/{name}", method = RequestMethod.POST)
     public String recipeGetRecipeFromName(@PathVariable String name, Model model)
     {
         model.addAttribute("recipes", recipeService.findByName(name));
         model.addAttribute("recipe",new Recipe());
-        return "recipes/Recipes";
+        return "Recipes";
     }
 
     @RequestMapping(value = "/recipe", method = RequestMethod.POST)
@@ -36,7 +42,7 @@ public class RecipeController
     {
         model.addAttribute("recipe", new Recipe());
         model.addAttribute("recipes", recipeService.findAll());
-        return "recipes/Recipes";
+        return "Recipes";
     }
 
     /*@RequestMapping(value = "/recipe", method = RequestMethod.POST)
