@@ -15,7 +15,7 @@ import java.util.List;
 public class RecipeServiceImplementation implements RecipeService {
     RecipeRepository repository;
 
-    @Autowired
+    /*@Autowired
     public RecipeServiceImplementation(RecipeRepository repository) {
         this.repository = repository;
     }
@@ -35,15 +35,15 @@ public class RecipeServiceImplementation implements RecipeService {
         return repository.findByName(name);
     }
 
-    @Override 
+    /*@Override 
     public List<Recipe> findByTags(int tagId, int serves, int priceLow, int priceHigh, int category) {
         return repository.findByTags(tagId, serves, priceLow, priceHigh, category); 
-    }
+    }*/
 
-    @Override
+    /*@Override
     public void sendRecipe(long id, String email) {
         //Eftir að implementa
         return;
-    }
+    }*/
 }
 

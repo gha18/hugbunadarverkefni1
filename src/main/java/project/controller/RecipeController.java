@@ -17,7 +17,7 @@ public class RecipeController
 {
     RecipeService recipeService;
 
-    @Autowired
+    /*@Autowired
     public RecipeController(RecipeService recipeService)
     {
         this.recipeService = recipeService;
@@ -47,11 +47,11 @@ public class RecipeController
         return "recipes/Recipes";
     }
 
-    @RequestMapping(value = "/recipe", method = RequestMethod.POST)
+    /*@RequestMapping(value = "/recipe", method = RequestMethod.POST)
     public void sendRecipe(long id, String email)
     {
         //Ekki hugmynd
-    }
+    }*/
 
 }
 
