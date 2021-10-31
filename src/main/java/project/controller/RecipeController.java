@@ -17,22 +17,14 @@ public class RecipeController
 {
     RecipeService recipeService;
 
-    /*@Autowired
+    @Autowired
     public RecipeController(RecipeService recipeService)
     {
         this.recipeService = recipeService;
     }
 
-    @RequestMapping(value = "/recipe", method = RequestMethod.POST)
-    public String recipeGetDescriptionFromName(@PathVariable String name, Model model)
-    {
-        model.addAttribute("recipes", recipeService.findByName(name));
-        model.addAttribute("recipe",new Recipe());
-        return "recipes/Recipes";
-    }
-
-    @RequestMapping(value = "/recipe", method = RequestMethod.POST)
-    public String recipeGetInstructionsFromName(@PathVariable String name, Model model)
+    @RequestMapping(value = "/recipe/{name}", method = RequestMethod.POST)
+    public String recipeGetRecipeFromName(@PathVariable String name, Model model)
     {
         model.addAttribute("recipes", recipeService.findByName(name));
         model.addAttribute("recipe",new Recipe());

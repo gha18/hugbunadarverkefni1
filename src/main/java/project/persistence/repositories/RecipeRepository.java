@@ -1,15 +1,18 @@
 package project.persistence.repositories;
 import project.persistence.entities.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import project.persistence.entities.Tags;
 
 import java.util.List;
 
 public interface RecipeRepository extends JpaRepository<Recipe, Long> {
-    /*List<Recipe> findAll();
+    List<Recipe> findAll();
 
-    Recipe findOne(long id);
+    //@Query(value = "Select p FROM recipe p WHERE p.id = 1")
+    //Recipe findOne(long id);
 
+    //@Query(value = "SELECT p FROM recipe p WHERE p.name = 'test'")
     List<Recipe> findByName(String name);
 
     //@Query(value = "SELECT p FROM Recipe p WHERE p.tags = ?1 AND p.serves = ?2 AND p.price >= ?3 AND p.price <= ?4 AND p.category = ?5")
