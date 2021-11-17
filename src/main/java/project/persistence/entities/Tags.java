@@ -5,7 +5,7 @@ import javax.persistence.*;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
+//generated value?
 @Embeddable
 public class Tags {
 

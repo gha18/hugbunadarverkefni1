@@ -10,7 +10,7 @@ import project.persistence.entities.Recipe;
 import project.persistence.repositories.RecipeRepository;
 import project.service.RecipeService;
 
-
+//samræma nöfn á controllerum
 @Controller
 
 public class RecipeController
@@ -37,6 +37,7 @@ public class RecipeController
         return "Recipes";
     }
 
+    //Get method en ekki post?
     @RequestMapping(value = "/recipe", method = RequestMethod.POST)
     public String recipeViewGet(Model model)
     {
